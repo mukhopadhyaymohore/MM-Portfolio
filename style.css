@@ -1,0 +1,234 @@
+/* General Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #63b3ed;
+}
+
+/* Header */
+header {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #aaa;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus,
+nav a.active {
+    color: #1e90ff;
+}
+
+/* Hero Section (Split Image & Text) */
+.hero {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Left half - image */
+.hero-left {
+    flex: 1;
+    overflow: hidden;
+}
+
+.hero-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.hero-left img:hover {
+    transform: scale(1.05);
+}
+
+/* Right half - text */
+.hero-right {
+    flex: 1;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-right h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-right p {
+    font-size: 1.3rem;
+    max-width: 80%;
+    line-height: 1.6;
+}
+
+/* About Section */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #000; /* optional, to match bg */
+}
+
+section h2 {
+    font-size: 2rem;
+    border-left: 5px solid #1e90ff;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+section p {
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
+a i.fab:hover {
+    color: #1e90ff;
+    transition: color 0.3s ease;
+}
+
+/* Optional Responsive Fix */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .hero-right h2 {
+        font-size: 2rem;
+    }
+
+    .hero-right p {
+        font-size: 1rem;
+    }
+}
+
+/* Projects / Techxperience */
+.projects,
+.techxperience {
+    background-color: #111;
+    border-radius: 8px;
+    padding: 40px 30px;
+    margin-top: 30px;
+}
+
+.projects h3,
+.techxperience h3 {
+    color: #1e90ff;
+}
+
+button,
+.btn {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #0d6efd;
+}
+
+/* Contact */
+.contact {
+    background-color: #1a1a1a;
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+.contact a {
+    color: #1e90ff;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+/* Footer (if any) */
+footer {
+    background-color: #0a0a0a;
+    color: #666;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Scrollbar Styling (Optional) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #1e90ff;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
