@@ -245,3 +245,10 @@ video {
       border-radius: 10px;
       box-shadow: 0 0 15px cyan;
 }
+.rgbvideo-box {
+      display: inline-block;
+      width: 45%;
+      min-width: 250px;
+      margin: 10px;
+      vertical-align: top;
+}
